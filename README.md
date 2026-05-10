@@ -26,7 +26,7 @@ This project demonstrates real-time monitoring, embedded security,sensor interfa
 ✔ LCD user interface  
 ✔ Real-time hardware simulation in Proteus  
 
-## Hardware Requirements
+## Hardware 
 
 - LPC2148 ARM7 Microcontroller
 - 16x2 LCD Display
@@ -39,7 +39,7 @@ This project demonstrates real-time monitoring, embedded security,sensor interfa
 - Resistors
 - Power Supply
 
-## Software Requirements
+## Software
 
 - Embedded C
 - Keil uVision 4
