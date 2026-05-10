@@ -541,17 +541,24 @@ Press B:
 
 ---
 
-# Quick Reference
+# 📋 Summary
 
 | Action | Steps |
 |--------|-------|
-| Enter edit mode | Press EDIT switch |
-| Confirm input | Press S |
-| Delete digit | Press B |
-| Move menu up | Press U |
-| Move menu down | Press D |
-| Stop alarm | Press Alarm Stop switch |
-| Default password | 1234 |
+| Enter menu | Press **EDIT Switch (SW1)** |
+| Enter password | Type password → **S** |
+| Set RTC | SW1 → Password → **1.Edit RTC** → Select parameter → Enter value → **S** |
+| Set Alarm | SW1 → Password → **2.Set Alarm** → Enter Hour → Enter Minute → **S** |
+| Stop Alarm | Press **ALARM STOP Switch (SW2)** |
+| Change PIN | SW1 → Password → **3.PIN Update** → Old PIN → New PIN → Confirm |
+| Exit Menu | Select **4.EXIT** or **8.EXIT** in RTC menu |
+| Move Up | Press **U** |
+| Move Down | Press **D** |
+| Select / Confirm | Press **S** |
+| Delete Last Digit | Press **B** |
+| Default Password | **1234** |
+| Wrong Password | **ACCESS DENIED** |
+| 3 Wrong Attempts | **SYSTEM LOCKED (45 sec)** |
 
 ---
 
