@@ -33,44 +33,50 @@ The system performs:
 ## High-Level Architecture
 
 ```text
-┌─────────────────────────────────────────────────────────────┐
-│                     ENVIROTIME SYSTEM                      │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│ INPUT DEVICES               LPC2148               OUTPUTS   │
-│                                                             │
-│ ┌────────────┐                                 ┌─────────┐ │
-│ │  Keypad    │────GPIO────────────────────────►│  LCD    │ │
-│ └────────────┘                                 └─────────┘ │
-│                                                             │
-│ ┌────────────┐                                 ┌─────────┐ │
-│ │   LM35     │────ADC─────────────────────────►│ Temp    │ │
-│ └────────────┘                                 └─────────┘ │
-│                                                             │
-│ ┌────────────┐                                 ┌─────────┐ │
-│ │ Edit SW    │────GPIO────────────────────────►│ Menu    │ │
-│ └────────────┘                                 └─────────┘ │
-│                                                             │
-│ ┌────────────┐                                 ┌─────────┐ │
-│ │ Stop SW    │────GPIO────────────────────────►│ Buzzer  │ │
-│ └────────────┘                                 └─────────┘ │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────┐
+│                          EnviroTime System                               │
+│                                                                          │
+│   INPUT                   PROCESSING CORE                 OUTPUT        │
+│                                                                          │
+│  ┌──────────┐             ┌──────────────┐          ┌──────────────┐    │
+│  │  4×4     │  ──GPIO──►  │              │  ──GPIO─►│  16×2 LCD   │    │
+│  │ Keypad   │             │   LPC2148    │          │   Display   │    │
+│  └──────────┘             │  ARM7TDMI-S  │          └──────────────┘    │
+│                           │   60 MHz     │                               │
+│  ┌──────────┐             │              │          ┌──────────────┐    │
+│  │  LM35    │  ──ADC───►  │  Flash:512KB │  ──GPIO─►│   Buzzer    │    │
+│  │ Temp     │             │  RAM:  32KB  │          │   Alarm     │    │
+│  │ Sensor   │             │              │          └──────────────┘    │
+│  └──────────┘             │  RTC (32kHz) │                               │
+│                           │  (built-in)  │          ┌──────────────┐    │
+│  ┌──────────┐             │              │          │  Keil HEX   │    │
+│  │  EDIT    │  ──GPIO───► │              │          │  via ISP    │    │
+│  │  Switch  │             └──────────────┘          └──────────────┘    │
+│  └──────────┘                                                            │
+│  ┌──────────┐                                                            │
+│  │  ALARM   │  ──GPIO───►  (Stops buzzer)                               │
+│  │  Switch  │                                                            │
+│  └──────────┘                                                            │
+└──────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
 # 2. Hardware Architecture
 
-## Microcontroller
+## Microcontroller LPC2148 Key Specifications
 
-| Parameter | Value |
-|-----------|-------|
-| Controller | LPC2148 |
-| Core | ARM7TDMI-S |
-| Frequency | 60 MHz |
-| Flash | 512 KB |
-| RAM | 32 KB |
+| Property | Value |
+|----------|-------|
+| CPU Core | ARM7TDMI-S (32-bit RISC) |
+| Maximum Clock | 60 MHz |
+| Flash Memory | 512 KB |
+| SRAM | 32 KB |
+| GPIO | 46 pins across Port 0 (P0) and Port 1 (P1) |
+| Built-in RTC | Yes — supports external 32.768 kHz crystal or internal PCLK prescaler |
+| ADC | 10-bit, 8-channel ADC (AD0) |
+| UART | 2 UART interfaces (UART0 and UART1) |
+| Package | LQFP64 |
 
 ---
 
@@ -196,7 +202,7 @@ Responsible for:
 Power ON
    │
    ▼
-Initialize Peripherals
+Initialize All Peripherals
    │
    ▼
 Display Startup Message
