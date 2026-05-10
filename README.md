@@ -132,33 +132,16 @@ Alarm stops only when stop switch is pressed.
 
 # 🔌 Pin Configuration Summary
 
-| Peripheral | Signal | LPC2148 Pin | Direction | Description |
-|------------|--------|-------------|-----------|-------------|
-| LCD | RS | P0.16 | Output | Register Select |
-| LCD | RW | P0.17 | Output | Read/Write Control |
-| LCD | EN | P0.8 | Output | Enable Signal |
-| LCD | D0 | P0.9 | Output | LCD Data Bit 0 |
-| LCD | D1 | P0.10 | Output | LCD Data Bit 1 |
-| LCD | D2 | P0.11 | Output | LCD Data Bit 2 |
-| LCD | D3 | P0.12 | Output | LCD Data Bit 3 |
-| LCD | D4 | P0.13 | Output | LCD Data Bit 4 |
-| LCD | D5 | P0.14 | Output | LCD Data Bit 5 |
-| LCD | D6 | P0.15 | Output | LCD Data Bit 6 |
-| LCD | D7 | P0.18 | Output | LCD Data Bit 7 |
-| Keypad | Row A | P1.16 | Output | Keypad Row 1 |
-| Keypad | Row B | P1.17 | Output | Keypad Row 2 |
-| Keypad | Row C | P1.18 | Output | Keypad Row 3 |
-| Keypad | Row D | P1.19 | Output | Keypad Row 4 |
-| Keypad | Column 1 | P1.20 | Input | Keypad Column 1 |
-| Keypad | Column 2 | P1.21 | Input | Keypad Column 2 |
-| Keypad | Column 3 | P1.22 | Input | Keypad Column 3 |
-| Keypad | Column 4 | P1.23 | Input | Keypad Column 4 |
-| Switch | EDIT Switch | P0.0 | Input | Enter Edit Mode (Active LOW) |
-| Switch | Alarm Stop | P0.1 | Input | Stop Alarm (Active LOW) |
-| Sensor | LM35 Output | P0.28 (AD0.1) | Input | Temperature Sensor |
-| Alarm | Buzzer / LED | P0.25 | Output | Alarm Indication (Active HIGH) |
-| UART | TXD0 | P0.0 | Output | Serial Communication |
-| UART | RXD0 | P0.1 | Input | Serial Communication |
+| Peripheral | Signals | LPC2148 Pins | Direction | Description |
+|------------|---------|--------------|-----------|-------------|
+| LCD Control | RS, RW, EN | P0.16, P0.17, P0.8 | Output | LCD control signals |
+| LCD Data Bus | D0–D7 | P0.9–P0.15, P0.18 | Output | 8-bit LCD data lines |
+| Keypad Rows | Row A–D | P1.16–P1.19 | Output | Keypad row scanning |
+| Keypad Columns | Column 1–4 | P1.20–P1.23 | Input | Keypad column detection |
+| Edit Switch | SW1 | P0.0 | Input | Enter edit mode (Active LOW) |
+| Alarm Stop Switch | SW2 | P0.1 | Input | Stop alarm (Active LOW) |
+| Temperature Sensor | LM35 (AD0.1) | P0.28 | Input | Analog temperature input |
+| Alarm Output | Buzzer / LED | P0.25 | Output | Alarm indication (Active HIGH) |
 
 
 ## Project Structure
