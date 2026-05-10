@@ -19,8 +19,8 @@ After initialization, the main monitoring screen appears:
 
 ```text
 ┌────────────────┐
-│ 12:30:25 T:28C │
-│ 03/05/2026 WED │ 
+│ 12:30:00 T:28C │
+│ 03/05/2026 MON │ 
 └────────────────┘
 ```
 
@@ -58,11 +58,12 @@ Special keys:
 
 Press the **EDIT switch (P0.0)**.
 
+
 The LCD asks for password:
 
 ```text
 ┌────────────────┐
-│ENTER PASSWORD  │
+│ENTER PASSWORD: │
 └────────────────┘
 ```
 
@@ -85,8 +86,17 @@ to confirm.
 ---
 
 # If Password Is Correct
+If the entered password is correct, the LCD briefly displays:
 
-The main menu appears.
+```text
+┌────────────────┐
+│ACCEPTED        │
+└────────────────┘
+```
+
+This message is shown for approximately **1 second**.
+
+After that, the main menu appears...
 
 Use:
 
@@ -100,13 +110,19 @@ Use:
 
 ```text
 ┌──────────────┐   ┌──────────────┐
-│ 1. EDIT RTC  │   │ 2. SET ALARM │
+│1.EDIT RTC    │   │2.SET ALARM   │
 └──────────────┘   └──────────────┘
 
 ┌──────────────┐   ┌──────────────┐
-│ 3. PIN UPDATE│   │   4. EXIT    │
+│3.PIN UPDATE  │   │4.EXIT        │
 └──────────────┘   └──────────────┘
 ```
+| Option | Function |
+|--------|----------|
+| 1 | Edit RTC settings (time, date, day, month, year) |
+| 2 | Set alarm time |
+| 3 | Update system PIN/password |
+| 4 | Exit and return to main monitoring screen |
 
 ---
 
@@ -115,7 +131,7 @@ Use:
 Select:
 
 ```text
-1.RTC
+1. EDIT RTC
 ```
 
 RTC menu:
@@ -138,60 +154,110 @@ RTC menu:
 LCD shows:
 
 ```text
-Enter Hour 0-23
+Enter Hour (0-23)
 ```
 
 Example:
-
-To set 14:
-
-Press:
 
 ```text
 1 → 4 → S
 ```
 
-LCD shows:
+Valid range:
+
+```text
+0–23
+```
+
+If valid:
 
 ```text
 HOUR UPDATED
+```
+
+If invalid:
+
+```text
+INVALID HOUR
+```
+
+Example invalid values:
+
+```text
+24, 35, 99
 ```
 
 ---
 
 ## Setting Minute
 
-Range:
+LCD shows:
+
+```text
+Enter Minute (0-59)
+```
+
+Valid range:
 
 ```text
 0–59
 ```
 
-Press:
+If valid:
 
 ```text
-value → S
+MIN UPDATED
+```
+
+If invalid:
+
+```text
+INVALID MIN
+```
+
+Example invalid values:
+
+```text
+60, 75, 99
 ```
 
 ---
 
 ## Setting Second
 
-Range:
+LCD shows:
+
+```text
+Enter Second (0-59)
+```
+
+Valid range:
 
 ```text
 0–59
 ```
 
-Press:
+If valid:
 
 ```text
-value → S
+SEC UPDATED
+```
+
+If invalid:
+
+```text
+INVALID SEC
 ```
 
 ---
 
 ## Setting Day
+
+LCD shows:
+
+```text
+Enter Day (0-6)
+```
 
 Values:
 
@@ -205,35 +271,99 @@ Values:
 6 = Saturday
 ```
 
+If invalid:
+
+```text
+INVALID DAY
+```
+
+Example invalid values:
+
+```text
+7, 8, 9
+```
+
 ---
 
 ## Setting Date
 
-Range:
+LCD shows:
+
+```text
+Enter Date (1-31)
+```
+
+Valid range:
 
 ```text
 1–31
 ```
 
-Date validation is automatic.
+System also checks:
 
-Leap year supported.
+- Month
+- Leap year
+- Number of days in selected month
+
+Examples:
+
+```text
+31/04  → INVALID DATE
+29/02/2025 → INVALID DATE
+32/01 → INVALID DATE
+```
+
+If valid:
+
+```text
+DATE UPDATED
+```
+
+If invalid:
+
+```text
+INVALID DATE
+```
 
 ---
 
 ## Setting Month
 
-Range:
+LCD shows:
+
+```text
+Enter Month (1-12)
+```
+
+Valid range:
 
 ```text
 1–12
+```
+
+If invalid:
+
+```text
+INVALID MONTH
+```
+
+Example:
+
+```text
+13, 15
 ```
 
 ---
 
 ## Setting Year
 
-Range:
+LCD shows:
+
+```text
+Enter Year
+```
+
+Valid range:
 
 ```text
 2000–2099
@@ -245,43 +375,111 @@ Example:
 2 → 0 → 2 → 6 → S
 ```
 
+If invalid:
+
+```text
+INVALID YEAR
+```
+
+Example invalid values:
+
+```text
+1999, 2100
+```
+
 ---
 
-# Alarm Setting
+To return to main menu:
 
+```text
+8.EXIT
+```
+# Alarm Setting
 Select:
 
 ```text
-2.ALARM
+2. SET ALARM
 ```
 
-Enter:
+---
 
-## Alarm Hour
+## Setting Alarm Hour
+
+LCD shows:
+
+```text
+Enter Hour (0-23)
+```
+
+Valid range:
 
 ```text
 0–23
 ```
 
-## Alarm Minute
+Example:
+
+```text
+0 → 7 → S
+```
+
+If valid:
+
+```text
+HOUR SAVED
+```
+
+If invalid:
+
+```text
+INVALID HOUR
+```
+---
+
+## Setting Alarm Minute
+
+LCD shows:
+
+```text
+Enter Minute (0-59)
+```
+
+Valid range:
 
 ```text
 0–59
 ```
 
-After saving:
+Example:
+
+```text
+3 → 0 → S
+```
+
+If valid:
+
+```text
+MIN SAVED
+```
+
+If invalid:
+
+```text
+INVALID MIN
+```
+
+---
+
+## Alarm Saved
+
+If both values are valid, LCD shows:
 
 ```text
 ALARM SAVED
 ```
 
-Example:
+The alarm is now enabled.
 
-```text
-07:30
-```
-
----
 
 # When Alarm Triggers
 
@@ -289,7 +487,7 @@ If current RTC time matches alarm:
 
 ```text
 ┌────────────────┐
-│ ALARM ACTIVE  │
+│ ALARM ACTIVE   │
 └────────────────┘
 ```
 
@@ -314,7 +512,7 @@ Alarm turns OFF.
 Select:
 
 ```text
-3.PASSWORD
+3.UPDATE PIN
 ```
 
 Steps:
