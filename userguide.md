@@ -180,13 +180,6 @@ If invalid:
 ```text
 INVALID HOUR
 ```
-
-Example invalid values:
-
-```text
-24, 35, 99
-```
-
 ---
 
 ## Setting Minute
@@ -214,13 +207,6 @@ If invalid:
 ```text
 INVALID MIN
 ```
-
-Example invalid values:
-
-```text
-60, 75, 99
-```
-
 ---
 
 ## Setting Second
@@ -276,13 +262,6 @@ If invalid:
 ```text
 INVALID DAY
 ```
-
-Example invalid values:
-
-```text
-7, 8, 9
-```
-
 ---
 
 ## Setting Date
@@ -346,13 +325,6 @@ If invalid:
 ```text
 INVALID MONTH
 ```
-
-Example:
-
-```text
-13, 15
-```
-
 ---
 
 ## Setting Year
@@ -380,13 +352,6 @@ If invalid:
 ```text
 INVALID YEAR
 ```
-
-Example invalid values:
-
-```text
-1999, 2100
-```
-
 ---
 
 To return to main menu:
