@@ -4,7 +4,7 @@
 
 # Table of Contents
 
-1. System Overview  
+1. High level Architecture  
 2. Hardware Architecture  
 3. Software Module Architecture  
 4. Program Flow  
@@ -15,22 +15,8 @@
 
 ---
 
-# 1. System Overview
 
-EnviroTime is a real-time embedded monitoring and security system
-developed using the **NXP LPC2148 ARM7 microcontroller**.
-
-The system performs:
-
-- Real-time clock monitoring
-- Temperature sensing
-- Password authentication
-- Alarm generation
-- User parameter editing
-
----
-
-## High-Level Architecture
+# High-Level Architecture
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────────┐
@@ -80,44 +66,6 @@ The system performs:
 
 ---
 
-## Pin Mapping
-
-### LCD
-
-| Signal | Pin |
-|--------|-----|
-| RS | P0.16 |
-| RW | P0.17 |
-| EN | P0.8 |
-| D0–D7 | P0.9–P0.18 |
-
-### Keypad
-
-| Signal | Pin |
-|--------|-----|
-| Rows | P1.16–P1.19 |
-| Columns | P1.20–P1.23 |
-
-### LM35
-
-| Signal | Pin |
-|--------|-----|
-| Output | P0.28 (AD0.1) |
-
-### Switches
-
-| Signal | Pin |
-|--------|-----|
-| Edit Switch | P0.0 |
-| Alarm Stop | P0.1 |
-
-### Alarm Output
-
-| Signal | Pin |
-|--------|-----|
-| Buzzer / LED | P0.25 |
-
----
 
 # 3. Software Module Architecture
 
