@@ -336,44 +336,6 @@ Peripheral Clock = 15 MHz
 
 ---
 
-# 8. Data Structures
-
-## Password
-
-```c
-default_password[5]
-```
-
-Default:
-
-```text
-1234
-```
-
----
-
-## Alarm Variables
-
-```c
-alarm_hour
-alarm_min
-alarm_flag
-```
-
----
-
-## RTC Variables
-
-```c
-h
-mi
-s
-d
-mo
-y
-da
-```
-
 ---
 
 # Conclusion
