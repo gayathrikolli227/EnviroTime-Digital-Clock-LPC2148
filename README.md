@@ -180,37 +180,13 @@ EnviroTime/
 
 ### Hardware Setup
 
-(Add your hardware image here)
 
-```markdown
-![Hardware Setup](Images/hardware_setup.jpg)
-```
-
-### Proteus Simulation
-
-(Add your Proteus screenshot here)
-
-```markdown
-![Proteus Simulation](Images/proteus_simulation.png)
-```
+### Proteus Simulation 
 
 ### LCD Output
 
-(Add LCD output image here)
-
-```markdown
-![LCD Output](Images/lcd_output.png)
-```
-
 ### Flowchart
 
-(Add flowchart image here)
-
-```markdown
-![Flowchart](Images/flowchart.png)
-```
-
----
 
 ## Results
 
@@ -267,5 +243,4 @@ Through this project, the following skills were developed:
 ## Author
 
 **Gayathri Kolli**  
-Embedded Systems Engineer  
 Mini Project – LPC2148 Embedded System
