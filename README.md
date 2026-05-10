@@ -28,16 +28,16 @@ This project demonstrates real-time monitoring, embedded security,sensor interfa
 
 ## Hardware Requirements
 
--> LPC2148 ARM7 Microcontroller
--> 16x2 LCD Display
--> 4x4 Matrix Keypad
--> LM35 Temperature Sensor
--> Push Buttons / Switches
--> Buzzer/LED
--> USB-UART Converter
--> Crystal Oscillator
--> Resistors
--> Power Supply
+- LPC2148 ARM7 Microcontroller
+- 16x2 LCD Display
+- 4x4 Matrix Keypad
+- LM35 Temperature Sensor
+- Push Buttons / Switches
+- Buzzer/LED
+- USB-UART Converter
+- Crystal Oscillator
+- Resistors
+- Power Supply
 
 ## Software Requirements
 
