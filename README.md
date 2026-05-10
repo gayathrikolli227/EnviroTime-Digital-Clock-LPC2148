@@ -41,41 +41,41 @@ This project demonstrates real-time monitoring, embedded security,sensor interfa
 
 ## Software Requirements
 
--> Embedded C
--> Keil uVision 4
--> Proteus Design Suite
--> Flash Magic
+- Embedded C
+- Keil uVision 4
+- Proteus Design Suite
+- Flash Magic
 
 ## Tech Specifications
 
 ### Microcontroller
 
--> Controller : LPC2148
--> Core : ARM7TDMI-S
--> Clock Speed : Up to 60 MHz
--> Flash Memory : 512 KB
--> RAM : 32 KB
+- Controller : LPC2148
+- Core : ARM7TDMI-S
+- Clock Speed : Up to 60 MHz
+- Flash Memory : 512 KB
+- RAM : 32 KB
 
 ### Sensor
 
--> Sensor : LM35
--> Output : Analog
--> Temperature Range : 0°C to 100°C
+- Sensor : LM35
+- Output : Analog
+- Temperature Range : 0°C to 100°C
 
 ### Display
 
--> Type : 16x2 LCD
--> Mode : 8-bit GPIO interface
+- Type : 16x2 LCD
+- Mode : 8-bit GPIO interface
 
 ### Input Devices
 
--> 4x4 Matrix Keypad
--> Push Switches
+- 4x4 Matrix Keypad
+- Push Switches
 
 ### Output Devices
 
--> Buzzer / LED
--> LCD Display
+- Buzzer / LED
+- LCD Display
 
 ## System Working
 
