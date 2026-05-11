@@ -15,7 +15,7 @@
 
 ---
 
-## Project Overview 
+## 🎯 Project Overview 
 EnviroTime is a real-time embedded system developed using the LPC2148 ARM7 microcontroller. The system continuously displays current time, date, day and ambient temperature on a 16x2 LCD.
 
 The project also provides:
@@ -29,7 +29,7 @@ The project also provides:
 
 This project demonstrates real-time monitoring, embedded security,sensor interfacing, and user-controlled configuration.
 
-## Features
+## ✨ Features
 
 ✔ Real-Time Clock (RTC) display  
 ✔ Temperature monitoring using LM35  
@@ -61,9 +61,9 @@ This project demonstrates real-time monitoring, embedded security,sensor interfa
 - 🛠️ Keil uVision 4 IDE  
 - 🖥️ Proteus Design Suite  
 - ⚡ Flash Magic Programmer  
-## Tech Specifications
+## ⚙️ Technical Specifications
 
-### Microcontroller
+### 🧠 Microcontroller
 
 - Controller : LPC2148
 - Core : ARM7TDMI-S
@@ -71,28 +71,28 @@ This project demonstrates real-time monitoring, embedded security,sensor interfa
 - Flash Memory : 512 KB
 - RAM : 32 KB
 
-### Sensor
+### 🌡️ Sensor
 
 - Sensor : LM35
 - Output : Analog
 - Temperature Range : 0°C to 100°C
 
-### Display
+### 📺 Display
 
 - Type : 16x2 LCD
 - Mode : 8-bit GPIO interface
 
-### Input Devices
+### ⌨️ Input Devices
 
 - 4x4 Matrix Keypad
 - Push Switches
 
-### Output Devices
+### 🔔 Output Devices
 
 - Buzzer / LED
 - LCD Display
 
-## System Working
+## 🔄 System Working
 
 ### 1. Initialization
 
@@ -159,7 +159,7 @@ Alarm stops only when stop switch is pressed.
 | Alarm Output | Buzzer / LED | P0.25 | Output | Alarm indication (Active HIGH) |
 
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 EnviroTime/
@@ -174,7 +174,7 @@ EnviroTime/
 
 ---
 
-## Images
+## 📸 Images
 📂 [View All Images](Images/)
 ### Proteus Simulation 
 📸 [View Flowchart](Images/FULL_PROTEUS_CONNECTIONS.png)
@@ -183,7 +183,7 @@ EnviroTime/
 ### Main Screen display
 📸 [View Flowchart](Images/MAIN_TIME_TEMP_DATE_DAY_DISPLAY.png)
 
-## Results
+## 📊 Results
 
 Successfully implemented:
 
@@ -197,7 +197,7 @@ Successfully implemented:
 
 ---
 
-## Applications
+## 🌍 Applications
 
 - Used in homes for displaying time and room temperature. 
 - Used in offices for real-time clock and temperature monitoring.
@@ -209,7 +209,7 @@ Successfully implemented:
 
 ---
 
-## Future Scope
+## 🚀 Future Scope
 
 - Wireless communication modules such as ESP8266 or Bluetooth can be integrated for remote monitoring and wireless data transmission. 
 - Real-time clock and temperature data can be stored in non-volatile memory devices such as EEPROM or Flash Memory for data logging and analysis.
@@ -220,7 +220,7 @@ Successfully implemented:
 
 ---
 
-## Outcomes
+## 🎯 Outcomes
 
 Through this project, the following skills were developed:
 
@@ -237,7 +237,6 @@ Through this project, the following skills were developed:
 
 ---
 
-## Author
-
+## 👩‍💻 Author
 **Gayathri Kolli**  
 Mini Project – LPC2148 Embedded System
