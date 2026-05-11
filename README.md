@@ -149,16 +149,17 @@ Alarm stops only when stop switch is pressed.
 ```text
 EnviroTime/
 │
-├── Source_Code/
-├── Proteus_Simulation/
-├── Project_Report/
+├── Documents/
 ├── Images/
+├── Project_Report/
+├── Proteus_Simulation/
+├── Source_Code/
 ├── README.md
 ```
 
 ---
 
-## Screenshots
+## Images
 
 ### Hardware Setup
 
