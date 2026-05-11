@@ -169,7 +169,7 @@ EnviroTime/
 ### LCD Output
 
 ### Flowchart
-[![Flowchart](Images/FLOWCHART.png)](Images/FLOWCHART.png)
+📸 [View Flowchart](Images/FLOWCHART.png)
 
 ## Results
 
