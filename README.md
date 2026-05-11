@@ -1,4 +1,20 @@
-# ENVIROTIME: Digital Clock with Real-Time Temperature Monitoring
+# 🌡️ ENVIROTIME: Digital Clock with Real-Time Temperature Monitoring
+
+<div align="center">
+
+⚡ ARM7 LPC2148 Based Embedded System  
+🔒 Password Protected • ⏰ Real-Time Clock • 🌡️ Temperature Monitoring • 🔔 Alarm System  
+
+📖 [User Guide](Documents/USER_GUIDE.md) •
+🔌 [Hardware Setup](Documents/HARDWARE_SETUP.md) •
+🏗️ [Architecture](DocumentsARCHITECTURE.md) •
+📄 [Project Report](Project_Report/PROJECT_REPORT.pdf) •
+
+
+</div>
+
+---
+
 ## Project Overview 
 EnviroTime is a real-time embedded system developed using the LPC2148 ARM7 microcontroller. The system continuously displays current time, date, day and ambient temperature on a 16x2 LCD.
 
