@@ -8,7 +8,7 @@
 📖 [User Guide](Documents/userguide.md) •
 🔌 [Hardware Setup](Documents/hardware.md) •
 🏗️ [Architecture](Documents/architecture.md) •
-📄 [Project Report](Project_Report/full project report.docx) •
+📄 [Project Report](Project_Report/full%20project%20report.pdf)
 
 
 </div>
