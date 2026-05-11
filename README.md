@@ -42,25 +42,25 @@ This project demonstrates real-time monitoring, embedded security,sensor interfa
 ✔ LCD user interface  
 ✔ Real-time hardware simulation in Proteus  
 
-## Hardware 
+## 🛠️ Hardware Components
 
-- LPC2148 ARM7 Microcontroller
-- 16x2 LCD Display
-- 4x4 Matrix Keypad
-- LM35 Temperature Sensor
-- Push Buttons / Switches
-- Buzzer/LED
-- USB-UART Converter
-- Crystal Oscillator
-- Resistors
-- Power Supply
+- 🧠 **LPC2148 ARM7 Microcontroller**
+- 📺 **16x2 LCD Display**
+- ⌨️ **4x4 Matrix Keypad**
+- 🌡️ **LM35 Temperature Sensor**
+- 🔘 **Push Buttons / Switches**
+- 🔔 **Buzzer / LED**
+- 🔌 **USB-UART Converter**
+- ⏱️ **Crystal Oscillator**
+- ⚡ **Resistors**
+- 🔋 **Power Supply**
 
-## Software
+## 💻 Software Requirements
 
-- Embedded C
-- Keil uVision 4
-- Proteus Design Suite
-- Flash Magic
+- 👨‍💻 **Embedded C**
+- 🛠️ **Keil uVision 4**
+- 🖥️ **Proteus Design Suite**
+- ⚡ **Flash Magic**
 
 ## Tech Specifications
 
