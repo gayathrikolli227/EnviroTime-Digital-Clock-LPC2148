@@ -7,7 +7,7 @@
 
 📖 [User Guide](Documents/USER_GUIDE.md) •
 🔌 [Hardware Setup](Documents/HARDWARE_SETUP.md) •
-🏗️ [Architecture](DocumentsARCHITECTURE.md) •
+🏗️ [Architecture](Documents/ARCHITECTURE.md) •
 📄 [Project Report](Project_Report/PROJECT_REPORT.pdf) •
 
 
