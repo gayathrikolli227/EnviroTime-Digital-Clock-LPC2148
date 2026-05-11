@@ -236,6 +236,9 @@ Through this project, the following skills were developed:
 - Hardware debugging
 
 ---
+## 📜 License
+
+This project is licensed under the MIT License.
 
 ## 👩‍💻 Author
 **Gayathri Kolli**  
