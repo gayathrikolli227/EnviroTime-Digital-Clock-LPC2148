@@ -161,15 +161,12 @@ EnviroTime/
 
 ## Images
 📂 [View All Images](Images/)
-### Hardware Setup
-
-
 ### Proteus Simulation 
-
-### LCD Output
-
+📸 [View Flowchart](Images/FULL_PROTEUS_CONNECTIONS.png)
 ### Flowchart
 📸 [View Flowchart](Images/FLOWCHART.png)
+### Main Screen display
+📸 [View Flowchart](Images/MAIN_TIME_TEMP_DATE_DAY_DISPLAY.png)
 
 ## Results
 
@@ -187,22 +184,24 @@ Successfully implemented:
 
 ## Applications
 
-- Home automation
-- Smart clocks
-- Laboratory monitoring
-- Industrial monitoring
-- Security systems
-- Real-time embedded devices
+- Used in homes for displaying time and room temperature. 
+- Used in offices for real-time clock and temperature monitoring.
+- Used in laboratories where temperature monitoring is important. 
+- Used in hospitals to monitor room temperature and time. 
+- Used in industrial areas for basic environmental monitoring. 
+- Used in schools and colleges as a digital clock with alarm and security feature. 
+- Can be used as a basic model for smart home automation systems. 
 
 ---
 
 ## Future Scope
 
-- IoT cloud connectivity
-- Mobile app monitoring
-- Wi-Fi alerts
-- Voice assistant integration
-- Data logging
+- Wireless communication modules such as ESP8266 or Bluetooth can be integrated for remote monitoring and wireless data transmission. 
+- Real-time clock and temperature data can be stored in non-volatile memory devices such as EEPROM or Flash Memory for data logging and analysis.
+- Additional sensors such as humidity sensors, gas sensors, or motion sensors can be interfaced to enhance environmental monitoring capabilities.
+- The system can be integrated with smart home and industrial automation platforms for intelligent monitoring applications.
+- Implementation of temperature history recording for monitoring and analyzing environmental changes over time.
+- Cloud-based monitoring and notification features can be implemented for IoT applications.
 
 ---
 
