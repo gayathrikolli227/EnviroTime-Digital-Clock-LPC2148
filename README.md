@@ -5,9 +5,10 @@
 ⚡ ARM7 LPC2148 Based Embedded System  
 🔒 Password Protected • ⏰ Real-Time Clock • 🌡️ Temperature Monitoring • 🔔 Alarm System  
 
-📖 [User Guide](Documents/USER_GUIDE.md) •
-🔌 [Hardware Setup](Documents/HARDWARE_SETUP.md) •
+📖 [User Guide](Documents/userguide.md) •
+🔌 [Hardware Setup](Documents/hardware.md) •
 🏗️ [Architecture](Documents/architecture.md) •
+📄 [Project Report](Project_Report/full project report.docx) •
 
 
 </div>
