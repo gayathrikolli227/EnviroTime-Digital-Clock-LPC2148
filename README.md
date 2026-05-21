@@ -169,8 +169,8 @@ Alarm stops only when stop switch is pressed.
 
 | Peripheral | Signals | LPC2148 Pins | Direction | Description |
 |------------|---------|--------------|-----------|-------------|
-| LCD Control | RS, RW, EN | P0.16, P0.17, P0.8 | Output | LCD control signals |
-| LCD Data Bus | D0–D7 | P0.9–P0.15, P0.18 | Output | 8-bit LCD data lines |
+| LCD Control | RS, RW, EN | P0.16, P0.17, P0.18 | Output | LCD control signals |
+| LCD Data Bus | D0–D7 | P0.8–P0.15 | Output | 8-bit LCD data lines |
 | Keypad Rows | Row A–D | P1.16–P1.19 | Output | Keypad row scanning |
 | Keypad Columns | Column 1–4 | P1.20–P1.23 | Input | Keypad column detection |
 | Edit Switch | SW1 | P0.0 | Input | Enter edit mode |
