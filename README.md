@@ -87,7 +87,7 @@ This project demonstrates real-time monitoring, embedded security, sensor interf
 
 - Sensor : LM35
 - Output : Analog
-- Temperature Range : 0°C to 100°C
+- Temperature Range : -55°C to 150°C
 
 ### 📺 Display
 
